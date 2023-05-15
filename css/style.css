@@ -1,0 +1,478 @@
+*{
+    font-family: 'Rationale', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fondo{
+    background-image: url('../imagenes/fondo.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: top;
+}
+
+.text-white{
+    color: white;
+}
+.text-black{
+    color: black;
+}
+.text-blue{
+    color: #00d9c0;
+}
+li a{
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.list-header a{
+    color: white;
+}
+header div{
+    width: 100%;
+}
+.text-menu{
+    color: black;
+    font-size: 2vh;
+    font-weight: 100;
+}
+.text-grande{
+    font-size: 10vh;
+    font-weight: 400;
+}
+.text-mediano{
+    font-size: 3vh;
+    font-weight: 150;
+}
+.centrar{
+    text-align: center;
+}
+#header{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid white;
+}
+header ul li{
+    list-style-type: none;
+    display: inline;
+}
+.bullDogGym {
+    font-size: 3vh;
+}
+.logo img{
+    width: 20%;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 11px -6px 34px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 11px -6px 34px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px -6px 34px -3px rgba(0,0,0,0.75);
+}
+.en-linea{
+    display: inline;
+    display: flex;
+}
+
+#menuHeader button{
+    background-color: #00d9c0;
+    position: relative;
+    width: 50%;
+    height: 50%;   
+    border: black solid;
+}
+.centrar-contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section1 {
+    height: 50%;
+    overflow: hidden;
+    padding: 5%;
+}
+#imagenSection1{
+    width: 80%;
+}
+#imagenSection1 img{
+    height: 85%;
+    width: 100%;
+}
+#section2{
+    height: 50%;
+    border: 2px solid #00d9c0;
+}
+.frase-motivacional{
+    padding: 3%;
+}
+.frase-2{
+    padding: 3%;
+    padding-right: 20%;
+}
+.empezar-ahora{
+    height: 15%;
+}
+.empezar-ahora button{
+    height:60% ;
+    width: 120%;
+    border-radius: 15px;
+    background-color: #00d9c0;
+}
+#imagen-actividad{
+    height: 50%;
+    padding: 2%;
+}
+#imagen-actividad div img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+#imagen-actividad div{
+    padding: 2%;
+}
+#section2{
+    overflow: hidden;
+    height: 45%;
+}
+.fondoblanco{
+    background-color: white;
+}
+.ver-mas button{
+    height: 30%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #00d9c0;
+}
+.buttom-header button{
+    height: 50%;
+    width: 110%;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #00d9c0;
+}
+#section3{
+    height: 40%;
+}
+#comentarios div{
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#oferta {
+    background-color: #00d9c0;
+}
+#section4 {
+    padding-bottom: 4%;
+}
+
+.pintar{
+    background-color: red;
+}
+#footer{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid white;
+}
+.logof img{
+    height: 65%;
+    width: 30%;
+    border-radius: 20px;
+}
+#logoFooter{
+    width: 10%;
+}
+#seguinos{
+    width: 25%;
+}
+#seguinos img{
+    height: 35%;
+    width: 8%;
+}
+#suscribete {
+    width: 50%;
+}
+#suscribete input{
+    margin-left: 2%;
+    width: 35%;
+}
+#suscribete button{
+    background-color: #00d9c0;
+    width: 12%;
+    height: 35%;
+}
+#sectionReservar {
+    padding: 5%;
+}
+#formularioReserva div{
+    padding: 3%;
+}
+#reservar input{
+    height: 5%;
+    width: 10%;
+    background-color: #00d9c0;
+}
+#sedesCordoba div{
+    padding: 2%;
+}
+#sedesCarlosPaz div{
+    padding: 3%;
+}
+#mainSedes{
+    overflow: hidden;
+}
+#sectionBajarDePeso{
+    padding: 3%;
+}
+#sectionAumentarVolumen{
+    padding: 3%;
+}
+#sectionDefinirCuerpo{
+    padding: 3%;
+}
+#ingresar {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.formulario-ingreso div{
+    padding: 5%;
+}
+.formulario-ingreso div input{
+    height: 5%;
+    width: 60%;
+}
+#botonesIngreso input{
+    background-color: #00d9c0;
+    width: 15%;
+}
+#crearUsuarioBoton input{
+    background-color: #00d9c0;
+    width: 15%;
+}
+#botonRecuperarContraseña button{
+    background-color: #00d9c0;
+}
+#ingresarPlataforma {
+    padding: 2%;
+}
+#ingresarPlataforma div{
+    padding: 5%;
+    width: 100%;
+    height: 50%;
+}
+#imagenIngreso img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+#planes {
+    padding: 8%;
+}
+.imagen-plan {
+    padding: 3%;
+}
+.imagen-plan a img{
+    border-radius: 5px;
+}
+.imagen-coach img{
+    height: 30%;
+    width: 30%;
+}
+.espacio-celda {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#tabla{
+    width: 95%;
+}
+
+/* ACTIVIDADES */
+#bodyAct{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 7vh 340vh 7vh;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+}
+#headerAct{
+    background-color: black;
+    border-bottom: 1px solid white;
+    grid-area: header;
+
+}
+#mainAct{
+    overflow: hidden;
+    grid-area: main;
+    padding:5vh;
+
+}
+#footerAct{
+    background-color: black;
+    border-top: 1px solid white;
+    grid-area: footer;
+}
+#recuadroActividades{
+    height: auto;
+    width: 100%;
+    margin: 15vh 0;
+}
+
+#actividadDefinicion{
+    display: grid;
+    display: flex;
+    flex-direction:row;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh 40vh;
+    grid-template-areas: 
+    "musculacion musculacion musculacion"
+    "funcional funcional funcional"
+    "crossfit crossfit crossfit"
+    "calistenia calistenia calistenia"
+    "spinning spinning spinning"
+    "yoga yoga yoga"
+    "pilates pilates pilates"
+    ;
+}
+
+#musculacion{
+    grid-area: musculacion;
+}
+#funcional{
+    grid-area: funcional;
+
+}
+#crossfit{
+    grid-area: crossfit;
+}
+#calistenia{
+    grid-area: calistenia;
+}
+#spinning{
+    grid-area: spinning;
+}
+#yoga{
+    grid-area: yoga;
+}
+#pilates{
+    grid-area: pilates;
+}
+.padding__actividad{
+    padding: 3vh 5vw;
+}
+.padding__actividad h3{
+    background-color: black;
+}
+.padding__actividad div:not(.imagen-no-borde){
+    margin: 5vh;
+    border-left: #00d9c0 solid 1px;
+}
+.padding__actividad div p{
+    padding: 0 4vw;
+    text-align: justify;
+    font-size: 2vh;
+}
+.padding__actividad div img {
+    width: 35vh;
+    aspect-ratio: 1/1;
+}
+.actividad--hover:hover{
+    color: green;
+}
+.nav--hover:hover{
+    color: #00d9c0;
+}
+.btnHeader--hover:hover {
+    color: white;
+    background-color: green;
+}
+ /* Clases extras para la pagina Bootstrap */
+
+ .boton--login{
+    font: 1vh;
+    width: 8vw;
+    padding: 0 1vh;
+    background-color: #00d9c0;
+ }
+ .boton--recuperarContraseña {
+    width: 20vw;
+    font-size: 3vh;
+    background-color: black;
+    color: #00d9c0;
+    border: #00d9c0 solid 2px;
+ }
+
+.celda--login{
+    width: 25vw;
+}
+.modal-body input {
+    width: 20vw;
+    border: black solid 1px;
+}
+.fondo-negro{
+    background-color: black !important;
+}
+.btn-close{
+    background-color:#00d9c0
+}
+ @media (max-width:576px){
+    #bodyAct{
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-rows: 7vh 780vh 7vh;
+        grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+        ;
+    }
+    .phone {
+        flex-direction: column;
+    } 
+    .text-grande{
+        font-size: 5vh;
+    }
+    .padding__actividad div:not(.imagen-no-borde){
+        margin: 5vh;
+        border-top: #00d9c0 solid 1px;
+        padding: 2vh;
+    }
+    .text-menu{
+        font-size: 2vh;
+        font-weight:50;
+    }
+    .list-header a{
+        color: 0;
+    }
+    .text--celular{
+        font-size: 10vhc !important;
+    }
+
+    .buttom-header button{
+        font-size: 1vh;
+    }
+    #seguinos h2{
+        font-size: 2vh;
+    }
+    #suscribete p{
+        font-size: 2vh;
+    }
+    #suscribete button {
+        font-size: 1vh;
+    }
+    .boton--recuperarContraseña {
+        width: 60vw;
+        font-size: 3vh;
+        background-color: black;
+        color: #00d9c0;
+        border: #00d9c0 solid 2px;
+    }
+    .boton--login{
+        font: 1vh;
+        width: 28vw;
+        padding: 0 1vh;
+        background-color: #00d9c0;
+     }
+ }
+

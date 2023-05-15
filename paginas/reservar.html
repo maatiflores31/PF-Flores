@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../imagenes/favicon.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Reservar</title>
+    </head>
+    <body class="fondo">
+        <header id="header" class="en-linea">
+            <div id="menuHeader" class="centrar-contenido">
+                <button class="text-menu">☰  MENU</button>
+            </div>
+            <div class="centrar-contenido">
+                <h2 class="text-white bullDogGym">Bull Dog Gym</h2> 
+            </div>  
+            <div class="logo centrar-contenido">
+                <img src="../imagenes/logo-gym.jpg" alt="logo">
+            </div>    
+            <div class="centrar-contenido">
+                <nav>
+                    <ul class="list-header">
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="./reservar.html">RESERVAR</a></li>
+                        <li><a href="./sedes.html">SEDES</a></li>
+                        <li><a href="./rutinas.html">RUTINAS</a>
+                        <li><a href="./contactos.html">CONTACTOS</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="centrar-contenido buttom-header">
+                <a href="./login.html">
+                    <button>INICIAR SESION</button>
+                </a>
+                <a href="./crear-usuario.html">
+                    <button>CREAR CUENTA</button>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section id="sectionReservar">
+                <form action="">
+                    <fieldset id="formularioReserva" class="text-white centrar text-mediano">
+                        <legend class="text-blue text-grande">RESERVAR MI TURNO</legend>
+                        <div>
+                            <h4 class="text-grande">¿A que zona queres ir?</h4>
+                            <label for="">
+                                Cordoba Capital
+                                <input type="radio" name="zona" value="Cordoba Capital">
+                            </label>
+                            <label for="">
+                                Carlos Paz
+                                <input type="radio" name="zona" value="Carlos Paz">
+                            </label>
+                        </div>  
+                        <div>
+                            <h4 class="text-grande">Elige tu actividad (solo una):</h4>
+                            <label for="">
+                                MUSCULACION
+                                <input type="checkbox" name="actividad" value="Musculacion">
+                            </label>
+                            <label for="">
+                                FUNCIONAL
+                                <input type="checkbox" name="actividad" value="Funcional">
+                            </label>
+                            <label for="">
+                                CROSSFIT
+                                <input type="checkbox" name="actividad" value="Crossfit">
+                            </label>
+                            <label for="">
+                                SPINNING
+                                <input type="checkbox" name="actividad" value="Spinning">
+                            </label>
+                            <label for="">
+                                YOGA
+                                <input type="checkbox" name="actividad" value="Yoga">
+                            </label>
+                            <label for="">
+                                CALISTENIA
+                                <input type="checkbox" name="actividad" value="Calistenia">
+                            </label>
+                        </div>
+                        <div>
+                            <h4 class="text-grande">Elige tu gimnasio:</h4>
+                            <select name="gym" id="">
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="BULL DOG GYM ESTRADA">Bull Dog Estrada</option>
+                                <option value="BULL DOG GYM FUNCIONAL">Bull Dog Gym Funcional</option>
+                                <option value="BULL DOG ZONA SUR">Bull Dog Zona Sur</option>
+                                <option value="BULL DOG GYM Y NATACION">Bull Dog Natacion</option>
+                                <option value="BULL DOG CALISTENIA">Bull Dog Calistenia</option>
+                                <option value="BULL DOG YOGA">Bull Dog Yoga</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4 class="text-grande">Elige un horario:</h4>
+                            <select name="gym" id="">
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option value="8hs">8hs</option>
+                                <option value="9hs">9hs</option>
+                                <option value="10hs">10hs</option>
+                                <option value="11hs">11hs</option>
+                                <option value="12hs">12hs</option>
+                                <option value="13hs">13hs</option>
+                                <option value="14hs">14hs</option>
+                                <option value="15hs">15hs</option>
+                                <option value="16hs">16hs</option>
+                                <option value="17hs">17hs</option>
+                                <option value="18hs">18hs</option>
+                                <option value="19hs">19hs</option>
+                                <option value="20hs">20hs</option>
+                                <option value="21hs">21hs</option>
+                                <option value="22hs">22hs</option>
+                            </select>
+                        </div>
+                        <div id="reservar">
+                            <input type="submit" value="RESERVAR">
+                            <input type="reset" value="BORRAR TODO">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer id="footer" class="en-linea">
+            <div id="logoFooter" class="logof centrar-contenido">
+                <img src="../imagenes/logo-gym.jpg" alt="">
+            </div>
+            <div id="seguinos" class="centrar-contenido">
+                <h2 class="text-white">Seguinos en:</h2>
+                <img src="../imagenes/iconos/facebook.png" alt="">
+                <img src="../imagenes/iconos/instagram.png" alt="">
+                <img src="../imagenes/iconos/twitter.png" alt="">
+                <img src="../imagenes/iconos/youtube.png" alt="">
+            </div>
+            <div id="suscribete" class="centrar-contenido">
+                <p class="text-white">Suscribete para mas informacion y noticias</p>
+                <input type="">
+                <button>SUSCRIBETE</button>
+            </div>
+            <div class="centrar-contenido">
+                <a href="#header">Subir al Inicio</a>
+            </div>
+        </footer>
+    </body>
+</html>
