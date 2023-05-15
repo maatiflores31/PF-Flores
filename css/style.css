@@ -419,12 +419,12 @@ header ul li{
 }
  @media (max-width:576px){
     #bodyAct{
-        grid-template-columns: 25vw 25vw 25vw 25vw;
-        grid-template-rows: 7vh 780vh 7vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 7vh 1000vh 7vh;
         grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer"
+        "header"
+        "main"
+        "footer"
         ;
     }
     .phone {
@@ -446,7 +446,7 @@ header ul li{
         color: 0;
     }
     .text--celular{
-        font-size: 10vhc !important;
+        font-size: 3vh !important;
     }
 
     .buttom-header button{
@@ -474,5 +474,13 @@ header ul li{
         padding: 0 1vh;
         background-color: #00d9c0;
      }
+     .padding__actividad div:not(.imagen-no-borde){
+        margin: 3vh;
+    }
+    .padding__actividad div p{
+        padding: 0 1vw;
+        text-align: justify;
+        font-size: 2vh;
+    }
  }
 
