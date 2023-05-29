@@ -7,79 +7,112 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
         <title>Rutinas</title>
     </head>
     <body class="fondo">
-        <header id="header" class="en-linea">
-            <div id="menuHeader" class="centrar-contenido">
-                <button class="text-menu">☰  MENU</button>
-            </div>
-            <div class="centrar-contenido">
-                <h2 class="text-white bullDogGym">Bull Dog Gym</h2> 
-            </div>  
-            <div class="logo centrar-contenido">
-                <img src="../imagenes/logo-gym.jpg" alt="logo">
-            </div>    
-            <div class="centrar-contenido">
-                <nav>
-                    <ul class="list-header">
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./reservar.html">RESERVAR</a></li>
-                        <li><a href="./sedes.html">SEDES</a></li>
-                        <li><a href="./rutinas.html">RUTINAS</a>
-                        <li><a href="./contactos.html">CONTACTOS</a>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="btn btn-primary oculto header__btn fs-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        MENU
+                    </button>
+                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-3"></span>
+                        MENU
+                    </button>
+                    <img class="img-fluid logo__img ms-5" src="./imagenes/logo-gym.jpg" alt="logo">
+                    <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
+                    <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
+                                <li class="nav-eitem">
+                                    <a class="nav-link text--white" aria-current="page" href="#">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text--white" href="#">RESERVAR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">SEDES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">RUTINAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">CONTACTOS</a>
+                                </li>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="../paginas/login.html">INICIAR SESION</a></button>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="../paginas/crear-usuario.html">CREAR CUENTA</a></button>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-start mi__menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">MI MENU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div>
+                    <ul class="menu__lista">
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Reservar</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Sedes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Contactos</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div class="centrar-contenido buttom-header">
-                <a href="./login.html">
-                    <button>INICIAR SESION</button>
-                </a>
-                <a href="./crear-usuario.html">
-                    <button>CREAR CUENTA</button>
-                </a>
+                </div>
             </div>
         </header>
         <main>
-            <div>
-                <h1 class="text-grande centrar text-blue">RUTINAS DISPONIBLES GRATUITAS</h1>
-                <section id="sectionBajarDePeso" class="en-linea">
-                    <div>
-                        <h2 class="text-white text-mediano">
+            <h1 class="text-center rutinas__titulo my-5">RUTINAS GRATUITAS DISPONIBLES</h1>
+            <div class="container-fluid text-center align-middle my-4">
+                <div class="row">
+                    <div class="col-12 col-xl-6 pe-2 rutinas__seccion">
+                        <h2 class="rutinas__subtitulos"><u>
                             RUTINA PARA BAJAR DE PESO
-                        </h2>
-                        <p class="text-white">
+                        </u></h2>
+                        <p class="rutinas__descrip fs-4">
                             La evidencia existente demuestra que uno de los factores de peor pronóstico para superar la enfermedad ha sido el grado de obesidad, incluso en mayor medida que otros factores, también relacionados con el sobrepeso, como las cardiopatías o diabetes.
                             Así pues, conviene hacer un especial hincapié en el hecho de que la obesidad no es una simple cuestión estética. Es un problema de salud que debe ser asumido y combatido en la medida de las posibilidades de cada uno. Es una realidad a la que no hay que darle la espalda y a la que afortunadamente se le puede poner remedio a través de una dieta equilibarda y del ejercicio físico, que pemrite mejorar las condiciones respiratoria, cardiaca, metabólica e inmunológica.
                             La Organización Mundial de las Salud recomienda completar al menos 150 minutos de actividad física a la semana, lo que en el fondo representa 30 minutos al día y no todos. Si además de correr, montar en bicicleta, ir al gimnasio o hacer rutinas de entrenamiento en casa incorporamos pequeños cambios en nuestro estilo de vida- subir escaleras o pendientes, jugar con los niños (a su ritmo), cargar con la compra o las labores de limpieza en el hogar- estaremos añadiendo una buena cantidad de ejercicio a nuestros hábitos. Y todo suma.
                         </p>
                     </div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yOkFhJBEKwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <div class="col-12 col-xl-6">
+                        <iframe class="rutinas__video" src="https://www.youtube.com/embed/C0dO40m_HQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-
-                </section>
-                <section id="sectionAumentarVolumen" class="en-linea">
-                    <div>
-                        <h2 class="text-mediano text-white">
+                </div>
+            </div>
+            <div class="container-fluid text-center my-4">
+                <div class="row">
+                    <div class="col-12 col-xl-6 pe-2">
+                        <h2 class="rutinas__subtitulos"><u>
                             RUTINA PARA AUMENTAR VOLUMEN
-                        </h2>
-                        <p class="text-white">
+                        </u></h2>
+                        <p class="rutinas__descrip fs-4">
                             Cuando decidimos ir al gimnasio, solemos tener dos objetivos en mente: quemar grasa y ganar músculo. Sin embargo, a lo largo de este segundo objetivo, nos podemos dar cuenta de que las cosas son más complicadas. Lo primero que debes saber, es qué ejercicios te convienen más para lograr tu meta y, por supuesto, cómo nutrirte tras una jornada de entrenamiento para aumentar masa en el menor tiempo posible.
                             Si buscas resultados rápidos de forma natural, aquí te presentamos una rutina de ejercicios para aumentar masa muscular en el gimnasio que te ayudará a definir un plan de entrenamiento clave para ganar masa muscular rápidamente.
                             Existen diversas rutinas de gimnasio para aumentar masa muscular, pero es necesario tener en cuenta varios aspectos antes de comenzar a ejercitarte. Primeramente, la capacidad de almacenar grasa en los seres humanos depende del metabolismo de cada uno, por lo que no todos los cuerpos ganan masa muscular con la misma facilidad. La clave para poder cumplir tu objetivo es ajustar la alimentación y el entrenamiento a las características de tu cuerpo.
                             En segundo lugar, es necesario definir una frecuencia de entrenamiento acorde a tus condiciones físicas. Debes procurar trabajar todos los músculos del cuerpo para ganar masa uniformemente, así como mantener un ritmo constante de entrenamiento.
                         </p>
                     </div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/C0dO40m_HQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <div class="col-12 col-xl-6">
+                        <iframe class="rutinas__video" src="https://www.youtube.com/embed/yOkFhJBEKwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                </section>
-                <section id="sectionDefinirCuerpo" class="en-linea">
-                    <div>
-                        <h2 class="text-white text-mediano">RUTINA PARA DEFINIR EL CUERPO</h2>
-                        <p class="text-white">
+                </div>
+            </div>
+            <div class="container-fluid text-center my-4">
+                <div class="row">
+                    <div class="col-12 col-xl-6 pe-2">
+                        <h2 class="rutinas__subtitulos "><u>
+                            RUTINA PARA DEFINIR EL CUERPO
+                        </u></h2>
+                        <p class="rutinas__descrip fs-4">
                             Una rutina de definición muscular es un programa de entrenamiento donde el principal objetivo es reducir nuestro porcentaje de grasa corporal pero manteniendo el músculo que hemos ganado durante nuestras rutinas de fuerza y volumen.
                             Sabemos que es muy difícil mantener todo el músculo obtenido cuando eres un practicante natural de culturismo. La buena noticia es que aunque pierdas algo de músculo en realidad parecerá más grande y tonificado debido a la pérdida de grasa corporal.
                             Como sabes el culturismo es una ilusión… una cintura estrecha con unos amplios hombros proporciona una visión más musculada que un hombre de 100 kilos cargado de músculo pero también grasa.
@@ -87,12 +120,12 @@
                             Te recordamos una vez más que el punto clave para definición muscular es la dieta.
                         </p>
                     </div>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/razgm-dtaRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <div class="col-12 col-xl-6">
+                        <iframe class="rutinas__video" src="https://www.youtube.com/embed/razgm-dtaRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                </section>
+                </div>
             </div>
-
         </main>
         <footer id="footer" class="en-linea">
             <div id="logoFooter" class="logof centrar-contenido">
@@ -113,6 +146,7 @@
             <div class="centrar-contenido">
                 <a href="#header">Subir al Inicio</a>
             </div>
-        </footer>      
+        </footer> 
+        <script src="../js/bootstrap.min.js"> </script>     
     </body>
 </html>

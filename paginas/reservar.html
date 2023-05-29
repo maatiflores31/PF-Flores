@@ -7,86 +7,112 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
         <title>Reservar</title>
     </head>
     <body class="fondo">
-        <header id="header" class="en-linea">
-            <div id="menuHeader" class="centrar-contenido">
-                <button class="text-menu">☰  MENU</button>
-            </div>
-            <div class="centrar-contenido">
-                <h2 class="text-white bullDogGym">Bull Dog Gym</h2> 
-            </div>  
-            <div class="logo centrar-contenido">
-                <img src="../imagenes/logo-gym.jpg" alt="logo">
-            </div>    
-            <div class="centrar-contenido">
-                <nav>
-                    <ul class="list-header">
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./reservar.html">RESERVAR</a></li>
-                        <li><a href="./sedes.html">SEDES</a></li>
-                        <li><a href="./rutinas.html">RUTINAS</a>
-                        <li><a href="./contactos.html">CONTACTOS</a>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="btn btn-primary oculto header__btn fs-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        MENU
+                    </button>
+                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-3"></span>
+                        MENU
+                    </button>
+                    <img class="img-fluid logo__img ms-5" src="./imagenes/logo-gym.jpg" alt="logo">
+                    <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
+                    <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
+                                <li class="nav-eitem">
+                                    <a class="nav-link text--white" aria-current="page" href="#">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text--white" href="#">RESERVAR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">SEDES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">RUTINAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">CONTACTOS</a>
+                                </li>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="../paginas/login.html">INICIAR SESION</a></button>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="../paginas/crear-usuario.html">CREAR CUENTA</a></button>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-start mi__menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">MI MENU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div>
+                    <ul class="menu__lista">
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Reservar</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Sedes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Contactos</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div class="centrar-contenido buttom-header">
-                <a href="./login.html">
-                    <button>INICIAR SESION</button>
-                </a>
-                <a href="./crear-usuario.html">
-                    <button>CREAR CUENTA</button>
-                </a>
+                </div>
             </div>
         </header>
         <main>
-            <section id="sectionReservar">
-                <form action="">
-                    <fieldset id="formularioReserva" class="text-white centrar text-mediano">
-                        <legend class="text-blue text-grande">RESERVAR MI TURNO</legend>
-                        <div>
-                            <h4 class="text-grande">¿A que zona queres ir?</h4>
-                            <label for="">
+            <div class="container text-center reservar__contenedor">
+                <form>
+                    <fieldset class="reservar__celda">
+                        <legend class="reservar__titulo">RESERVAR MI TURNO</legend>
+                        <div class="my-2">
+                            <h4 class="reservar__item">¿A que zona queres ir?</h4>
+                            <label class="reservar__opcion" for="">
                                 Cordoba Capital
                                 <input type="radio" name="zona" value="Cordoba Capital">
                             </label>
-                            <label for="">
+                            <label class="reservar__opcion" for="">
                                 Carlos Paz
                                 <input type="radio" name="zona" value="Carlos Paz">
                             </label>
                         </div>  
-                        <div>
-                            <h4 class="text-grande">Elige tu actividad (solo una):</h4>
-                            <label for="">
+                        <div class="my-2">
+                            <h4 class="reservar__item">Elige tu actividad (solo una):</h4>
+                            <label class="reservar__opcion" for="">
                                 MUSCULACION
                                 <input type="checkbox" name="actividad" value="Musculacion">
                             </label>
-                            <label for="">
+                            <label class="reservar__opcion" for="">
                                 FUNCIONAL
                                 <input type="checkbox" name="actividad" value="Funcional">
                             </label>
-                            <label for="">
+                            <label class="reservar__opcion" for="">
                                 CROSSFIT
                                 <input type="checkbox" name="actividad" value="Crossfit">
                             </label>
-                            <label for="">
+                            <label class="reservar__opcion" for="">
                                 SPINNING
                                 <input type="checkbox" name="actividad" value="Spinning">
                             </label>
-                            <label for="">
+                            <label class="reservar__opcion" for="">
                                 YOGA
                                 <input type="checkbox" name="actividad" value="Yoga">
                             </label>
-                            <label for="">
+                            <label class="reservar__opcion" for="">
                                 CALISTENIA
                                 <input type="checkbox" name="actividad" value="Calistenia">
                             </label>
                         </div>
-                        <div>
-                            <h4 class="text-grande">Elige tu gimnasio:</h4>
-                            <select name="gym" id="">
+                        <div class="my-2">
+                            <h4 class="reservar__item">Elige tu gimnasio:</h4>
+                            <select class="reservar__seleccionar" name="gym">
                                 <option value="" disabled selected>Seleccionar</option>
                                 <option value="BULL DOG GYM ESTRADA">Bull Dog Estrada</option>
                                 <option value="BULL DOG GYM FUNCIONAL">Bull Dog Gym Funcional</option>
@@ -96,9 +122,9 @@
                                 <option value="BULL DOG YOGA">Bull Dog Yoga</option>
                             </select>
                         </div>
-                        <div>
-                            <h4 class="text-grande">Elige un horario:</h4>
-                            <select name="gym" id="">
+                        <div class="my-2">
+                            <h4 class="reservar__item">Elige un horario:</h4>
+                            <select class="reservar__seleccionar" name="gym">
                                 <option value="" disabled selected>Seleccionar</option>
                                 <option value="8hs">8hs</option>
                                 <option value="9hs">9hs</option>
@@ -117,13 +143,13 @@
                                 <option value="22hs">22hs</option>
                             </select>
                         </div>
-                        <div id="reservar">
-                            <input type="submit" value="RESERVAR">
-                            <input type="reset" value="BORRAR TODO">
+                        <div class="my-4">
+                            <input class="reservar__btn mx-1" type="submit" value="RESERVAR">
+                            <input class="reservar__btn mx-1" type="reset" value="BORRAR TODO">
                         </div>
                     </fieldset>
-                </form>
-            </section>
+                </form>     
+            </div>
         </main>
         <footer id="footer" class="en-linea">
             <div id="logoFooter" class="logof centrar-contenido">
@@ -145,5 +171,6 @@
                 <a href="#header">Subir al Inicio</a>
             </div>
         </footer>
+        <script src="../js/bootstrap.min.js"> </script>
     </body>
 </html>

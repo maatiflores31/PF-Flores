@@ -7,129 +7,177 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
         <title>Inicio</title>
     </head>
-    <body>
-        <header id="header" class="en-linea">
-            <div id="menuHeader" class="centrar-contenido">
-                <button class="text-menu">☰  MENU</button>
-            </div>
-            <div class="centrar-contenido">
-                <h2 class="text-white bullDogGym">Bull Dog Gym</h2> 
-            </div>  
-            <div class="logo centrar-contenido">
-                <img src="./imagenes/logo-gym.jpg" alt="logo">
-            </div>    
-            <div class="centrar-contenido">
-                <nav>
-                    <ul class="list-header">
-                        <li><a href="">INICIO</a></li>
-                        <li><a href="./paginas/reservar.html">RESERVAR</a></li>
-                        <li><a href="./paginas/sedes.html">SEDES</a></li>
-                        <li><a href="./paginas/rutinas.html">RUTINAS</a>
-                        <li><a href="./paginas/contactos.html">CONTACTOS</a>
+    <body class="fondo">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="btn btn-primary oculto header__btn fs-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        MENU
+                    </button>
+                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-3"></span>
+                        MENU
+                    </button>
+                    <img class="img-fluid logo__img ms-5" src="../imagenes/logo-gym.jpg" alt="logo">
+                    <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
+                    <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
+                                <li class="nav-eitem">
+                                    <a class="nav-link text--white" aria-current="page" href="./index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text--white" href="./paginas/reservar.html">RESERVAR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text--white" href="./paginas/sedes.html">SEDES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text--white" href="./paginas/rutinas.html">RUTINAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text--white" href="./paginas/contactos.html">CONTACTOS</a>
+                                </li>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="./paginas/login.html">INICIAR SESION</a></button>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="./paginas/crear-usuario.html">CREAR CUENTA</a></button>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-start mi__menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">MI MENU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div>
+                    <ul class="menu__lista">
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Reservar</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Sedes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Contactos</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div class="centrar-contenido buttom-header">
-                <a href="./paginas/login.html">
-                    <button>INICIAR SESION</button>
-                </a>
-                <a href="./paginas/crear-usuario.html">
-                    <button>CREAR CUENTA</button>
-                </a>
+                </div>
             </div>
         </header>
-        <main class="fondo">
-            <section id="section1" class="en-linea">
-                <div>
-                    <div class="frase-motivacional">
-                        <h2 class="text-white text-grande">
-                            "Fijar objetivos es el primer paso para transformar lo invisible en visible" 
-                            <br>- Anthony Robbins
+        <main>
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <h2 class="text-white">
+                                "Fijar objetivos es el primer paso para transformar lo invisible en visible" 
+                                <br>- Anthony Robbins
                         </h2> 
-                    </div>
-                    <div class="frase-2 centrar-contenido">
                         <h3 class="text-white">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae fugit porro assumenda, repellendus laudantium facere sapiente quaerat repellat et aut praesentium sit consequatur obcaecati in deserunt ad modi. Unde, id!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae fugit porro assumenda, repellendus laudantium facere sapiente quaerat repellat et aut praesentium sit consequatur obcaecati in deserunt ad modi. Unde, id!
                         </h3>
-                    </div>
-                    <div class="empezar-ahora centrar-contenido">
                         <a class="" href="./paginas/planes.html">
-                            <button class="text-mediano">EMPEZAR AHORA!</button>
+                                <button class="">EMPEZAR AHORA!</button>
                         </a>
                     </div>
+                    <div class="col-12 col-xl-6 text-center my-auto">
+                        <img class="seccion1__imagen img-fluid" src="./imagenes/inicio/imagen1-noticias.jpg" alt="logo">
+                    </div>   
                 </div>
-                <div id="imagenSection1" class="centrar-contenido">
-                    <img src="./imagenes/inicio/imagen1-noticias.jpg" alt="logo">
-                </div>
-            </section>
-            <section id="section2">
-                <div class="centrar-contenido">
-                    <h3 class="text-white text-blue text-grande">
-                        ACTIVIDADES
-                    </h3>
-                </div>
-                <div id="imagen-actividad" class="centrar-contenido en-linea text-white">
-                    <div>
-                        <h3>MUSCULACION</h3>
-                        <img src="./imagenes/actividades/musculacion.jpg" alt="musculacion">
+            </div>
+            <div class="container-fluid text-center seccion2">
+                <h3 class="fs-1 text--white mt-4"><u>
+                    ACTIVIDADES </u>
+                </h3>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div>
-                        <h3>FUNCIONAL</h3>
-                        <img src="./imagenes/actividades/funcional.jpg" alt="funcional">
-                    </div>
-                    <div>
-                        <h3>CROSSFIT</h3>
-                        <img src="./imagenes/actividades/crossfit.jpg" alt="crossfit">
-                    </div>
-                    <div>
-                        <h3>CALISTENIA</h3>
-                        <img src="./imagenes/actividades/calistenia.jpg" alt="calistenia">
-                    </div>
-                    <div>
-                        <h3>SPINNING</h3>
-                        <img src="./imagenes/actividades/spinning.jpg" alt="spinning">
-                    </div>
-                </div>
-                <div class="centrar-contenido ver-mas">
-                    <a href="./paginas/actividades.html">
-                        <button class="text-mediano">VER MÁS</button>
-                    </a>
-                </div>
-            </section>
-            <section id="section3">
-                <div>
-                    <div class="centrar-contenido text-grande text-blue">
-                        <h3>Comentarios de nuestros usuarios</h3>
-                    </div>    
-                    <div class="centrar-contenido text-mediano text-white">
-                        <p>
-                            Nuestros usuarios estan muy contentos y eso nos motiva seguir creciendo para nuestros clientes.
-                        </p>
-                    </div>
-                    <div id="comentarios" class="en-linea centrar-contenido">
-                        <div>
-                            <img src="./imagenes/comentarios/comentario.png" alt="coment1">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row pb-4">
+                                <div class="col-6 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">MUSCULACION</h3>
+                                    <img class="img-fluid seccion1__imagen" src="./imagenes/actividades/musculacion.jpg" alt="musculacion">
+                                </div>
+                                <div class="col-6 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">FUNCIONAL</h3>
+                                    <img class="img-fluid seccion1__imagen" src="./imagenes/actividades/funcional.jpg" alt="funcional">
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="./imagenes/comentarios/comentario.png" alt="coment2">
+                        <div class="carousel-item">
+                            <div class="row pb-4">
+                                <div class="col-4 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">CROSSFIT</h3>
+                                    <img class="img-fluid seccion2__imagen" src="./imagenes/actividades/crossfit.jpg" alt="crossfit">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">CALISTENIA</h3>
+                                    <img class="img-fluid seccion2__imagen" src="./imagenes/actividades/calistenia.jpg" alt="calistenia">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">SPINNING</h3>
+                                    <img class="img-fluid seccion2__imagen" src="./imagenes/actividades/spinning.jpg" alt="spinning">
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="./imagenes/comentarios/comentario.png" alt="coment3">
+                        <div class="carousel-item">
+                            <div class="row pb-4">
+                                <div class="col-4 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">YOGA</h3>
+                                    <img class="img-fluid seccion2__imagen" src="./imagenes/actividades/yoga2.jpg" alt="yoga">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">PILATES</h3>
+                                    <img class="img-fluid seccion2__imagen" src="./imagenes/actividades/pilates2.jpg" alt="pilates">
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h3 class="nombre__actividad fs-3 mb-3">BOXEO</h3>
+                                    <img class="img-fluid seccion2__imagen" src="./imagenes/actividades/boxeo.jpg" alt="boxeo">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>    
-            </section>
-            <section id="section4">
-                <div id="oferta" class="centrar-contenido">
-                    <p class="text-black text-grande"> DESCUENTO DEL 30% EN PLANES DE + 3 MESES, APROVECHALO!!!</p>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previo</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
-            </section>
+            </div>
+            <div class="container-fluid my-4 text-center">
+                <h3 class="text--blue fs-3"><u>Comentarios de nuestros usuarios</u></h3>
+                <p class="fs-2 text--blue">
+                    Nuestros usuarios estan muy contentos y eso nos motiva seguir creciendo para nuestros clientes.
+                </p>
+                <div class="row">
+                    <div class="col-12 col-xl-4 p-3">
+                        <img class="img-fluid section3__img" src="./imagenes/comentarios/comentario.png" alt="coment1">
+                    </div>
+                    <div class="col-12 col-xl-4 p-3">
+                        <img class="img-fluid section3__img" src="./imagenes/comentarios/comentario.png" alt="coment2">
+                    </div>
+                    <div class="col-12 col-xl-4 p-3">
+                        <img class="img-fluid section3__img" src="./imagenes/comentarios/comentario.png" alt="coment3">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid section4 text-center">
+                <p class="text__oferta my-4">
+                    DESCUENTO DEL 30% EN PLANES DE + 3 MESES, APROVECHALO!!!
+                </p>
+            </div>
         </main>
         <footer id="footer" class="en-linea">
-            <div id="logoFooter" class="logof centrar-contenido">
+            <!-- <div id="logoFooter" class="logof centrar-contenido">
                 <img src="./imagenes/logo-gym.jpg" alt="">
             </div>
             <div id="seguinos" class="centrar-contenido">
@@ -146,7 +194,35 @@
             </div>
             <div class="centrar-contenido">
                 <a href="#header">Subir al Inicio</a>
+            </div> -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <img class="footer__logo" src="./imagenes/logo-gym.jpg" alt="">
+                            </div>
+                            <div class="col-8 text-center footer__contenedorSeguinos">
+                                <h2 class="footer__seguinos">Seguinos en:</h2>
+                                    <img class="footer__icono" src="./imagenes/iconos/facebook.png" alt="">
+                                    <img class="footer__icono" src="./imagenes/iconos/instagram.png" alt="">
+                                    <img class="footer__icono" src="./imagenes/iconos/twitter.png" alt="">
+                                    <img class="footer__icono" src="./imagenes/iconos/youtube.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 text-center">
+                        <div class="row">
+                            <div class="col">
+                                <input class="footer__celda">
+                                <button class="footer__btn">SUSCRIBETE</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
             </div>
         </footer>
+        <script src="./js/bootstrap.min.js"> </script>
     </body>
 </html>

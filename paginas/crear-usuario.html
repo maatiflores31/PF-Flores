@@ -7,98 +7,100 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
         <title>Crear Usuario</title>
     </head>
     <body class="fondo">
-        <header id="header" class="en-linea">
-            <div id="menuHeader" class="centrar-contenido">
-                <button class="text-menu">☰  MENU</button>
-            </div>
-            <div class="centrar-contenido">
-                <h2 class="text-white bullDogGym">Bull Dog Gym</h2> 
-            </div>  
-            <div class="logo centrar-contenido">
-                <img src="../imagenes/logo-gym.jpg" alt="logo">
-            </div>    
-            <div class="centrar-contenido">
-                <nav>
-                    <ul class="list-header">
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./reservar.html">RESERVAR</a></li>
-                        <li><a href="./sedes.html">SEDES</a></li>
-                        <li><a href="./rutinas.html">RUTINAS</a>
-                        <li><a href="./contactos.html">CONTACTOS</a>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="btn btn-primary oculto header__btn fs-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        MENU
+                    </button>
+                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-3"></span>
+                        MENU
+                    </button>
+                    <img class="img-fluid logo__img ms-5" src="./imagenes/logo-gym.jpg" alt="logo">
+                    <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
+                    <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
+                                <li class="nav-eitem">
+                                    <a class="nav-link text--white" aria-current="page" href="#">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text--white" href="#">RESERVAR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">SEDES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">RUTINAS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled text--white">CONTACTOS</a>
+                                </li>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="../paginas/login.html">INICIAR SESION</a></button>
+                                <button type="button" class="btn btn-warning mx-2 header__btn">
+                                    <a class="nav-link text-black" href="../paginas/crear-usuario.html">CREAR CUENTA</a></button>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-start mi__menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">MI MENU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div>
+                    <ul class="menu__lista">
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Reservar</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Sedes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Contactos</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div class="centrar-contenido buttom-header">
-                <a href="./login.html">
-                    <button>INICIAR SESION</button>
-                </a>
-                <a href="./crear-usuario.html">
-                    <button>CREAR CUENTA</button>
-                </a>
+                </div>
             </div>
         </header>
         <main>
-            <h2 class="text-blue text-grande centrar">Crear Usuario</h2>
-            <div id="ingresarPlataforma" class="en-linea">
-                <div>
-                    <fieldset id="ingresar">
-                        <form class="formulario-ingreso centrar" action="">
-                            <div>
-                                <h3 class="text-white">Ingrese su Nombre y Apellido:</h3>
-                                <input type="text" placeholder="Nombre y Apellido">
-                            </div>
-                            <div>
-                                <h3 class="text-white">Ingrese su N° de Documento:</h3>
-                                <input type="text" placeholder="DNI">
-                            </div>
-                            <div>
-                                <h3 class="text-white">Ingrese su correo electronico:</h3>
-                                <input type="text" placeholder="Correo Electronico">
-                            </div>
-                            <div>
-                                <h3 class="text-white">Ingrese su contraseña:</h3>
-                                <input type="password" placeholder="Contraseña">
-                            </div>
-                            <div>
-                                <h3 class="text-white">Confirme su contraseña:</h3>
-                                <input type="password" placeholder="Contraseña">
-                            </div>
-                            <div id="botonesIngreso" class="en-linea centrar-contenido">
-                                <input type="submit" value="Guardar">
-                                <input type="reset" value="Borrar todo">
-                                <input type="button" value="Crear cuenta">
-                            </div>
-                        </form>
-                    </fieldset>
-                </div>
-                <div id="imagenIngreso centrar-contenido">
-                    <img src="../imagenes/actividades/pilates.jpg" alt="">
+            <h2 class="crearUsuario__titulo text-center">CREAR USUARIO</h2>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-12 col-xl-6">
+                        <fieldset>
+                            <form class="" action="">
+                                <h3 class="crearUsuario__item my-3">Ingrese su Nombre y Apellido:</h3>
+                                <input class="crearUsuario__celda" type="text" placeholder="Nombre y Apellido">
+                                <h3 class="crearUsuario__item my-3">Ingrese su N° de Documento:</h3>
+                                <input class="crearUsuario__celda" type="text" placeholder="DNI">
+                                <h3 class="crearUsuario__item my-3">Ingrese su correo electronico:</h3>
+                                <input class="crearUsuario__celda" type="text" placeholder="Correo Electronico">
+                                <h3 class="crearUsuario__item my-3">Ingrese su contraseña:</h3>
+                                <input class="crearUsuario__celda" type="password" placeholder="Contraseña">
+                                <h3 class="crearUsuario__item my-3">Confirme su contraseña:</h3>
+                                <input class="crearUsuario__celda" type="password" placeholder="Contraseña">
+                                <div>
+                                    <input class="crearUsuario__btn m-2" type="submit" value="Guardar">
+                                    <input class="crearUsuario__btn" type="reset" value="Borrar todo">
+                                    <input class="crearUsuario__btn" type="button" value="Crear cuenta">
+                                </div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <img class="crearUsuario__img img-fluid" src="../imagenes/actividades/pilates.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </main>
-        <footer id="footer" class="en-linea">
-            <div id="logoFooter" class="logof centrar-contenido">
-                <img src="../imagenes/logo-gym.jpg" alt="">
-            </div>
-            <div id="seguinos" class="centrar-contenido">
-                <h2 class="text-white">Seguinos en:</h2>
-                <img src="../imagenes/iconos/facebook.png" alt="">
-                <img src="../imagenes/iconos/instagram.png" alt="">
-                <img src="../imagenes/iconos/twitter.png" alt="">
-                <img src="../imagenes/iconos/youtube.png" alt="">
-            </div>
-            <div id="suscribete" class="centrar-contenido">
-                <p class="text-white">Suscribete para mas informacion y noticias</p>
-                <input type="">
-                <button>SUSCRIBETE</button>
-            </div>
-            <div class="centrar-contenido">
-                <a href="#header">Subir al Inicio</a>
-            </div>
+        <footer>
+            
         </footer>
+        <script src="../js/bootstrap.min.js"> </script>
     </body>
 </html>
