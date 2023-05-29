@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../scss/basics/_typography.scss","../../scss/layout/header.scss","../../scss/basics/_colors.scss"],"names":[],"mappings":"AAAQ;ACKR;EACI;EACA;;AACA;EACI;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;;AAGJ;EACI;;AAEJ;EACI,kBC1BS;ED2BT;EACA;;AAEJ;EACI;;AAEJ;EACI","file":"header.css"}

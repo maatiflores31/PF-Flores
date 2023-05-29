@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/app.css">
         <title>Reservar</title>
     </head>
     <body class="fondo">
@@ -22,29 +22,29 @@
                         <span class="navbar-toggler-icon fs-3"></span>
                         MENU
                     </button>
-                    <img class="img-fluid logo__img ms-5" src="./imagenes/logo-gym.jpg" alt="logo">
+                    <img class="img-fluid logo__img ms-5" src="../imagenes/logo-gym.jpg" alt="logo">
                     <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
                     <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
                                 <li class="nav-eitem">
-                                    <a class="nav-link text--white" aria-current="page" href="#">INICIO</a>
+                                    <a class="nav-link text--white" aria-current="page" href="../index.html">INICIO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text--white" href="#">RESERVAR</a>
+                                    <a class="nav-link text--white" href="../paginas/reservar.html">RESERVAR</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled text--white">SEDES</a>
+                                    <a class="nav-link text--white" href="../paginas/sedes.html">SEDES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled text--white">RUTINAS</a>
+                                    <a class="nav-link text--white" href="../paginas/rutinas.html">RUTINAS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled text--white">CONTACTOS</a>
+                                    <a class="nav-link text--white" href="../paginas/contactos.html">CONTACTOS</a>
                                 </li>
                                 <button type="button" class="btn btn-warning mx-2 header__btn">
-                                    <a class="nav-link text-black" href="../paginas/login.html">INICIAR SESION</a></button>
+                                    <a class="nav-link text--black" href="../paginas/login.html">INICIAR SESION</a></button>
                                 <button type="button" class="btn btn-warning mx-2 header__btn">
-                                    <a class="nav-link text-black" href="../paginas/crear-usuario.html">CREAR CUENTA</a></button>
+                                    <a class="nav-link text--black" href="../paginas/crear-usuario.html">CREAR CUENTA</a></button>
                             </ul>
                     </div>
                 </div>
@@ -56,13 +56,13 @@
                 </div>
                 <div>
                     <ul class="menu__lista">
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Reservar</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Sedes</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Rutinas</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Planes</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Actividades</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/reservar.html">Reservar</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/sedes.html">Sedes</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/rutinas.html">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/planes.html">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/actividades.html">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/contactos.html">Contactos</a></li>
                     </ul>
                 </div>
             </div>
@@ -151,24 +151,32 @@
                 </form>     
             </div>
         </main>
-        <footer id="footer" class="en-linea">
-            <div id="logoFooter" class="logof centrar-contenido">
-                <img src="../imagenes/logo-gym.jpg" alt="">
-            </div>
-            <div id="seguinos" class="centrar-contenido">
-                <h2 class="text-white">Seguinos en:</h2>
-                <img src="../imagenes/iconos/facebook.png" alt="">
-                <img src="../imagenes/iconos/instagram.png" alt="">
-                <img src="../imagenes/iconos/twitter.png" alt="">
-                <img src="../imagenes/iconos/youtube.png" alt="">
-            </div>
-            <div id="suscribete" class="centrar-contenido">
-                <p class="text-white">Suscribete para mas informacion y noticias</p>
-                <input type="">
-                <button>SUSCRIBETE</button>
-            </div>
-            <div class="centrar-contenido">
-                <a href="#header">Subir al Inicio</a>
+        <footer> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <img class="footer__logo" src="../imagenes/logo-gym.jpg" alt="">
+                            </div>
+                            <div class="col-8 text-center footer__contenedorSeguinos">
+                                <h2 class="footer__seguinos">Seguinos en:</h2>
+                                    <img class="footer__icono" src="../imagenes/iconos/facebook.png" alt="">
+                                    <img class="footer__icono" src="../imagenes/iconos/instagram.png" alt="">
+                                    <img class="footer__icono" src="../imagenes/iconos/twitter.png" alt="">
+                                    <img class="footer__icono" src="../imagenes/iconos/youtube.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 text-center">
+                        <div class="row">
+                            <div class="col">
+                                <input class="footer__celda">
+                                <button class="footer__btn">SUSCRIBETE</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="../js/bootstrap.min.js"> </script>

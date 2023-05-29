@@ -1,0 +1,39 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+// HEADER 
+
+header {
+    background-color:$color-primario !important;
+    font-size:20px;
+    .logo__img {
+        height: 80%;
+        width: 30px;
+    }
+    .header__btn {
+        background-color: $color-terciario !important;
+        color: $color-primario !important;
+        font-size: 1vw !important;
+        border-radius: 15px !important;
+        border: none;
+    }
+    
+    .text--blue{
+        color: $color-terciario !important;
+    }
+    
+    .text--white{
+        color: $color-secundario !important;
+    }
+    .mi__menu {
+        background-color: $color-terciario;
+        border-top: 2px solid $color-primario !important;
+        border-width: 2px solid $color-primario !important;
+    }
+    .menu__fondo{
+        background-color: $color-primario !important;
+    }
+    .menu__lista {
+        list-style-type: none;
+    }
+}

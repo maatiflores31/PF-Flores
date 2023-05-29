@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+.contactos__contenedor {
+  margin: 4% 0;
+  padding: 5%;
+  background-color: #00d9c0;
+}
+
+.contactos__titulo {
+  padding: 4% 0;
+  background-color: black;
+  color: #00d9c0;
+  font-size: 5vw;
+}
+
+.contactos__nombre {
+  color: black;
+  font-size: 4vw;
+}
+
+.contactos__item {
+  text-decoration: underline;
+  color: black;
+  font-size: 3vw;
+}
+
+.contactos__detalle {
+  font-size: 2vw;
+  color: black;
+}
+
+.contactos__img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+/*# sourceMappingURL=contactos.css.map */

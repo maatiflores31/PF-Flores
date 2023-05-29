@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+* {
+  font-family: "Rationale", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo {
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.text--black {
+  color: black;
+}
+
+.text--blue {
+  color: #00d9c0 !important;
+}
+
+.text--white {
+  color: white !important;
+}
+
+/* INICIO */
+.section1__frase {
+  font-size: 4vw;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.seccion1__imagen {
+  height: 80%;
+  width: 80%;
+}
+
+.section1__btn {
+  height: 5vw;
+  width: 20vw;
+  background-color: #00d9c0;
+  color: black;
+  font-size: 3vw;
+}
+
+.section2__carrusel {
+  border: 2px solid #00d9c0;
+}
+
+.seccion2 {
+  border-radius: 5px;
+  border-top: 2px solid #00d9c0;
+  border-bottom: 2px solid #00d9c0;
+}
+
+.seccion2__imagen {
+  height: 80%;
+  width: 80%;
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+}
+
+.nombre__actividad {
+  color: #00d9c0;
+}
+
+.text--blue {
+  color: #00d9c0 !important;
+}
+
+.section4 {
+  background-color: #00d9c0;
+}
+
+.text__oferta {
+  color: black;
+  font-size: 4vw;
+}
+
+.section2__btn {
+  height: 5vw;
+  width: 10vw;
+  background-color: #00d9c0;
+  color: black;
+  font-size: 3vw;
+}
+
+/*# sourceMappingURL=main.css.map */

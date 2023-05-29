@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+.actividades__titulo {
+  padding: 4% 0;
+  background-color: black;
+  color: white;
+  font-size: 8vw;
+}
+
+.actividades__contenedor {
+  border-radius: 5px;
+  border: 2px solid #00d9c0;
+}
+
+.actividades__subtitulo {
+  background-color: color-terciario;
+  color: black;
+  font-size: 4vw;
+}
+
+.actividades__detalle {
+  background-color: black;
+  color: white;
+  font-size: 2vw;
+  padding: 5% 0;
+}
+
+.actividades__img {
+  padding-top: 10%;
+  height: 80%;
+  width: 80%;
+  aspect-ratio: 1/1;
+}
+
+/*# sourceMappingURL=actividades.css.map */

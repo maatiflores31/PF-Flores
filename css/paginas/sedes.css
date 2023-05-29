@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+.sedes__titulo {
+  font-size: 6vw;
+}
+
+.sedes__localidad {
+  font-size: 5vw;
+  color: black;
+  background-color: #00d9c0;
+}
+
+.sedes__gym {
+  font-size: 4vw;
+}
+
+/*# sourceMappingURL=sedes.css.map */

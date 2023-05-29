@@ -1,0 +1,21 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+// PLANES
+
+.planes__titulo{
+    margin: 3% 0;
+    background-color: $color-terciario;
+    color: $color-primario;
+    font-size: 8vw;
+    border-radius: 50px;
+}
+.planes__contenedor {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.planes__img {
+    height: 50vw;
+    width: 30vw;
+    border-radius: 10px;
+}

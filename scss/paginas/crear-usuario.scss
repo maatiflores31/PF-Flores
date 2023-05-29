@@ -1,0 +1,35 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+// CREAR USUARIO
+
+.crearUsuario__titulo{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    background-color: $color-terciario;
+    color: $color-primario;
+    font-size: 7vw;
+}
+.crearUsuario__item{
+    background-color: $color-primario;
+    color: $color-terciario;
+    font-size: 3vw;
+}
+.crearUsuario__celda{
+    width: 80%;
+    height: 40px;
+    font-size: 2vw;
+}
+
+.crearUsuario__btn{
+    color: $color-primario;
+    font-size: 2vw;
+    width: 12vw;
+    padding: 0 1vh;
+    background-color:$color-terciario;
+}
+.crearUsuario__img {
+    height: 80%;
+    width: 80%;
+    aspect-ratio: 1/1;
+}

@@ -1,0 +1,32 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+// ACTIVIDADES 
+
+.actividades__titulo {
+    padding: 4% 0;
+    background-color: $color-primario;
+    color: $color-secundario;
+    font-size: 8vw;
+}
+.actividades__contenedor {
+    border-radius: 5px;
+    border: 2px solid $color-terciario;
+}
+.actividades__subtitulo {
+    background-color: color-terciario;
+    color: black;
+    font-size: 4vw;
+}
+.actividades__detalle {
+    background-color: $color-primario;
+    color: $color-secundario;
+    font-size: 2vw;
+    padding: 5% 0;
+}
+.actividades__img {
+    padding-top: 10%;
+    height: 80%;
+    width: 80%;
+    aspect-ratio: 1/1;
+}

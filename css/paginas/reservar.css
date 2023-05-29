@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+.reservar__contenedor {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.reservar__titulo {
+  background-color: black;
+  color: #00d9c0;
+  font-size: 7vw;
+}
+
+.reservar__celda {
+  background-color: #00d9c0;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.reservar__item {
+  color: black;
+  font-size: 6vw;
+}
+
+.reservar__seleccionar {
+  font-size: 4vw;
+}
+
+.reservar__opcion {
+  color: black;
+  font-size: 3vw;
+}
+
+.reservar__btn {
+  height: 7vw;
+  width: 15vw;
+  background-color: black;
+  color: #00d9c0;
+  font-size: 3vw;
+}
+
+/*# sourceMappingURL=reservar.css.map */

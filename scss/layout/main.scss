@@ -1,0 +1,81 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+*{
+    font-family: 'Rationale', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fondo{
+    background-image: url('../imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.text--black{
+    color: $color-primario;
+}
+
+.text--blue{
+    color:$color-terciario !important;
+}
+
+.text--white{
+    color: $color-secundario !important;
+}
+
+/* INICIO */
+
+.section1__frase {
+    font-size: 4vw;
+    font-family: 'Lobster Two', sans-serif;
+}
+.seccion1__imagen {
+    height: 80%;
+    width: 80%;
+}
+.section1__btn {
+    height: 5vw;
+    width: 20vw;
+    background-color: $color-terciario;
+    color: $color-primario;
+    font-size: 3vw;
+}
+.section2__carrusel {
+    border: 2px solid $color-terciario;
+}
+.seccion2 {
+    border-radius: 5px;
+    border-top: 2px solid $color-terciario;
+    border-bottom: 2px solid $color-terciario;
+}
+.seccion2__imagen {
+    height: 80%;
+    width: 80%;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+}
+.nombre__actividad {
+    color: $color-terciario;
+}
+.text--blue {
+    color: $color-terciario !important;
+}
+
+.section4 {
+    background-color: $color-terciario;
+}
+
+.text__oferta {
+    color: $color-primario;
+    font-size: 4vw;
+}
+.section2__btn {
+    height: 5vw;
+    width: 10vw;
+    background-color: $color-terciario;
+    color: $color-primario;
+    font-size: 3vw;
+}

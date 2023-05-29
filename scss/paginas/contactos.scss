@@ -1,0 +1,34 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+// CONTACTOS
+
+.contactos__contenedor {
+    margin: 4% 0;
+    padding: 5%;
+    background-color: $color-terciario;
+}
+.contactos__titulo {
+    padding: 4% 0;
+    background-color: $color-primario;
+    color: $color-terciario;
+    font-size: 5vw;
+}
+.contactos__nombre {
+    color: $color-primario;
+    font-size: 4vw;
+}
+.contactos__item {
+    text-decoration: underline;
+    color: $color-primario;
+    font-size: 3vw;
+}
+.contactos__detalle {
+    font-size: 2vw;
+    color: $color-primario;
+}
+.contactos__img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+}

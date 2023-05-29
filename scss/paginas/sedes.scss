@@ -1,0 +1,18 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+// SEDES
+
+.sedes__titulo {
+    font-size: 6vw;
+}
+
+.sedes__localidad {
+    font-size: 5vw;
+    color: $color-primario;
+    background-color: $color-terciario;
+}
+
+.sedes__gym {
+    font-size: 4vw;
+}

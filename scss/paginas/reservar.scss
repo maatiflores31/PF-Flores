@@ -1,0 +1,39 @@
+@import '../basics/colors';
+@import '../basics/typography.scss';
+
+
+// RESERVAR
+
+.reservar__contenedor {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.reservar__titulo {
+    background-color: $color-primario;
+    color: $color-terciario;
+    font-size: 7vw;
+}
+.reservar__celda {
+    background-color:$color-terciario;
+    border-radius: 10px;
+    border: 2px solid $color-secundario;
+}
+.reservar__item {
+    color: $color-primario;
+    font-size: 6vw;
+}
+.reservar__seleccionar {
+    font-size: 4vw;
+
+}
+.reservar__opcion {
+    color: $color-primario;
+    font-size: 3vw;
+}
+.reservar__btn {
+    height: 7vw;
+    width: 15vw;
+    background-color:$color-primario;
+    color: $color-terciario;
+    font-size: 3vw;
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+.planes__titulo {
+  margin: 3% 0;
+  background-color: #00d9c0;
+  color: black;
+  font-size: 8vw;
+  border-radius: 50px;
+}
+
+.planes__contenedor {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.planes__img {
+  height: 50vw;
+  width: 30vw;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=planes.css.map */

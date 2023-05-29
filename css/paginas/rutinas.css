@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+.rutinas__titulo {
+  background-color: #00d9c0;
+  color: black;
+  font-size: 4vw;
+}
+
+.rutinas__descrip {
+  background-color: black;
+  color: #00d9c0;
+}
+
+.rutinas__video {
+  display: flex;
+  height: 90%;
+  width: 80%;
+  align-items: center;
+}
+
+.rutinas__subtitulos {
+  color: white;
+  background-color: black;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=rutinas.css.map */

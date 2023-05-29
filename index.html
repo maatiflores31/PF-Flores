@@ -7,8 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/app.css">
         <title>Inicio</title>
     </head>
     <body class="fondo">
@@ -22,7 +23,7 @@
                         <span class="navbar-toggler-icon fs-3"></span>
                         MENU
                     </button>
-                    <img class="img-fluid logo__img ms-5" src="../imagenes/logo-gym.jpg" alt="logo">
+                    <img class="img-fluid logo__img ms-5" src="./imagenes/logo-gym.jpg" alt="logo">
                     <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
                     <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
@@ -42,9 +43,9 @@
                                     <a class="nav-link text--white" href="./paginas/contactos.html">CONTACTOS</a>
                                 </li>
                                 <button type="button" class="btn btn-warning mx-2 header__btn">
-                                    <a class="nav-link text-black" href="./paginas/login.html">INICIAR SESION</a></button>
+                                    <a class="nav-link text--black" href="./paginas/login.html">INICIAR SESION</a></button>
                                 <button type="button" class="btn btn-warning mx-2 header__btn">
-                                    <a class="nav-link text-black" href="./paginas/crear-usuario.html">CREAR CUENTA</a></button>
+                                    <a class="nav-link text--black" href="./paginas/crear-usuario.html">CREAR CUENTA</a></button>
                             </ul>
                     </div>
                 </div>
@@ -56,13 +57,13 @@
                 </div>
                 <div>
                     <ul class="menu__lista">
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Reservar</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Sedes</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Rutinas</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Planes</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Actividades</a></li>
-                        <li class="nav-item"><a class="nav-link disabled text-start mx-3 my-1" href="#">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/reservar.html">Reservar</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/sedes.html">Sedes</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/rutinas.html">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/planes.html">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/actividades.html">Actividades</a></li>
+                        <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/contactos.html">Contactos</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,16 +72,18 @@
             <div class="container-fluid p-5">
                 <div class="row">
                     <div class="col-12 col-xl-6">
-                        <h2 class="text-white">
+                        <h2 class="text--white section1__frase">
                                 "Fijar objetivos es el primer paso para transformar lo invisible en visible" 
                                 <br>- Anthony Robbins
                         </h2> 
-                        <h3 class="text-white">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae fugit porro assumenda, repellendus laudantium facere sapiente quaerat repellat et aut praesentium sit consequatur obcaecati in deserunt ad modi. Unde, id!
+                        <h3 class="text--white my-3">
+                            Tres días para motivarte. Se necesitan tres semanas para formar un hábito. Hacen falta tres meses para obtener resultados. Y tres años para cumplir sus objetivos.
                         </h3>
-                        <a class="" href="./paginas/planes.html">
-                                <button class="">EMPEZAR AHORA!</button>
-                        </a>
+                        <div class="text-center">
+                            <button class="section1__btn">
+                                <a class="nav-link" href="./paginas/planes.html">EMPEZAR AHORA!</a>
+                            </button>
+                        </div>
                     </div>
                     <div class="col-12 col-xl-6 text-center my-auto">
                         <img class="seccion1__imagen img-fluid" src="./imagenes/inicio/imagen1-noticias.jpg" alt="logo">
@@ -152,9 +155,12 @@
                         <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
+                <button class="section2__btn my-4">
+                    <a class="nav-link" href="./paginas/actividades.html">VER MAS</a>
+                </button>
             </div>
             <div class="container-fluid my-4 text-center">
-                <h3 class="text--blue fs-3"><u>Comentarios de nuestros usuarios</u></h3>
+                <h3 class="text--blue fs-1"><u>Comentarios de nuestros usuarios</u></h3>
                 <p class="fs-2 text--blue">
                     Nuestros usuarios estan muy contentos y eso nos motiva seguir creciendo para nuestros clientes.
                 </p>
@@ -176,25 +182,7 @@
                 </p>
             </div>
         </main>
-        <footer id="footer" class="en-linea">
-            <!-- <div id="logoFooter" class="logof centrar-contenido">
-                <img src="./imagenes/logo-gym.jpg" alt="">
-            </div>
-            <div id="seguinos" class="centrar-contenido">
-                <h2 class="text-white">Seguinos en:</h2>
-                <img src="./imagenes/iconos/facebook.png" alt="">
-                <img src="./imagenes/iconos/instagram.png" alt="">
-                <img src="./imagenes/iconos/twitter.png" alt="">
-                <img src="./imagenes/iconos/youtube.png" alt="">
-            </div>
-            <div id="suscribete" class="centrar-contenido">
-                <p class="text-white">Suscribete para mas informacion y noticias</p>
-                <input type="">
-                <button>SUSCRIBETE</button>
-            </div>
-            <div class="centrar-contenido">
-                <a href="#header">Subir al Inicio</a>
-            </div> -->
+        <footer> 
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-7">
@@ -220,7 +208,6 @@
                         </div>  
                     </div>
                 </div>
-
             </div>
         </footer>
         <script src="./js/bootstrap.min.js"> </script>
