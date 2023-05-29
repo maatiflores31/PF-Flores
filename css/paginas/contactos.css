@@ -32,6 +32,12 @@
   height: 100%;
   width: 100%;
   aspect-ratio: 1/1;
+  transition: all 2s ease;
+}
+
+.contactos__img:hover {
+  transform: scale(0.8, 0.8);
+  transition: all 2s ease;
 }
 
 /*# sourceMappingURL=contactos.css.map */

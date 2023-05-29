@@ -70,7 +70,7 @@
         </header>
         <main>
             <h2 class="crearUsuario__titulo text-center">CREAR USUARIO</h2>
-            <div class="container-fluid">
+            <div class="container-fluid my-5">
                 <div class="row text-center">
                     <div class="col-12 col-xl-6">
                         <fieldset>
@@ -88,10 +88,21 @@
                                 <div>
                                     <input class="crearUsuario__btn m-2" type="submit" value="Guardar">
                                     <input class="crearUsuario__btn" type="reset" value="Borrar todo">
-                                    <input class="crearUsuario__btn" type="button" value="Crear cuenta">
+                                    <input class="crearUsuario__btn" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" value="Crear cuenta">
                                 </div>
                             </form>
                         </fieldset>
+                        <!-- Modal Boton Ingresar -->
+                        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 mx-2" id="staticBackdropLabel">✔ Cuenta creada con exito!</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-xl-6">
                         <img class="crearUsuario__img img-fluid" src="../imagenes/actividades/pilates.jpg" alt="">

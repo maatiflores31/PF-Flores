@@ -18,6 +18,9 @@
     color: $color-primario;
     font-size: 4vw;
 }
+.actividades__subtitulo:hover{
+    color: $color-secundario;
+}
 .actividades__detalle {
     background-color: $color-primario;
     color: $color-secundario;
@@ -29,4 +32,9 @@
     height: 80%;
     width: 80%;
     aspect-ratio: 1/1;
+    transition: all 2s ease;
+}
+.actividades__img:hover{
+    transform: scale(1.2,1.2); 
+    transition: all 2s ease;
 }

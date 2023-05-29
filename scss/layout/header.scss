@@ -14,12 +14,10 @@
     }
 }
 
-// @include text ("black",$color-primario);
-// @include text ("white",$color-secundario);
-// @include text ("blue",$color-terciario);
 header {
     background-color:$color-primario !important;
     font-size:20px;
+    border-bottom: 2px solid $color-secundario;
     .logo__img {
         height: 80%;
         width: 30px;
@@ -30,6 +28,10 @@ header {
         font-size: 1vw !important;
         border-radius: 15px !important;
         border: none;
+        :hover {
+            background-color: $color-cuatro;
+            transform: scale(1.5,1.5) !important;
+        }
     }
     .text--blue{
         color: $color-terciario !important;
@@ -45,8 +47,23 @@ header {
     }
     .menu__fondo{
         background-color: $color-primario !important;
+        li a:hover{
+            color: $color-terciario !important;
+        }
+        li {
+            border-left: 1px solid $color-terciario;
+        }
+        li:nth-child(1){
+            border-left: 0;
+        }
+        
     }
     .menu__lista {
         list-style-type: none;
+        li a:hover{
+            color: $color-secundario !important;
+        }
     }
+
 }
+

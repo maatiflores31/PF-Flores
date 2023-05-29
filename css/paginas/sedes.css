@@ -12,5 +12,8 @@
 .sedes__gym {
   font-size: 4vw;
 }
+.sedes__gym iframe:hover {
+  transform: scale(1.2, 1.2);
+}
 
 /*# sourceMappingURL=sedes.css.map */

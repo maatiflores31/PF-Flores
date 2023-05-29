@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/basics/_typography.scss","../../scss/paginas/sedes.scss","../../scss/basics/_colors.scss"],"names":[],"mappings":"AAAQ;ACKR;EACI;;;AAGJ;EACI;EACA,OCXY;EDYZ,kBCVa;;;ADajB;EACI","file":"sedes.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/basics/_typography.scss","../../scss/paginas/sedes.scss","../../scss/basics/_colors.scss"],"names":[],"mappings":"AAAQ;ACKR;EACI;;;AAGJ;EACI;EACA,OCXY;EDYZ,kBCVa;;;ADajB;EACI;;AACA;EACI","file":"sedes.css"}
