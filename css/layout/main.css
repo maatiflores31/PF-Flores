@@ -1,88 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
-* {
-  font-family: "Rationale", sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 16 | @include text ("black",$color-primario);
+ *    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\layout\main.scss 16:1  root stylesheet */
 
-.fondo {
-  background-image: url("../imagenes/fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined mixin.\a    \2577 \a 16 \2502  @include text ("black",$color-primario);\d\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\main.scss 16:1  root stylesheet';
 }
-
-.text--black {
-  color: black;
-}
-
-.text--blue {
-  color: #00d9c0 !important;
-}
-
-.text--white {
-  color: white !important;
-}
-
-/* INICIO */
-.section1__frase {
-  font-size: 4vw;
-  font-family: "Lobster Two", sans-serif;
-}
-
-.seccion1__imagen {
-  height: 80%;
-  width: 80%;
-}
-
-.section1__btn {
-  height: 5vw;
-  width: 20vw;
-  background-color: #00d9c0;
-  color: black;
-  font-size: 3vw;
-}
-
-.section2__carrusel {
-  border: 2px solid #00d9c0;
-}
-
-.seccion2 {
-  border-radius: 5px;
-  border-top: 2px solid #00d9c0;
-  border-bottom: 2px solid #00d9c0;
-}
-
-.seccion2__imagen {
-  height: 80%;
-  width: 80%;
-  border-radius: 8px;
-  aspect-ratio: 1/1;
-}
-
-.nombre__actividad {
-  color: #00d9c0;
-}
-
-.text--blue {
-  color: #00d9c0 !important;
-}
-
-.section4 {
-  background-color: #00d9c0;
-}
-
-.text__oferta {
-  color: black;
-  font-size: 4vw;
-}
-
-.section2__btn {
-  height: 5vw;
-  width: 10vw;
-  background-color: #00d9c0;
-  color: black;
-  font-size: 3vw;
-}
-
-/*# sourceMappingURL=main.css.map */

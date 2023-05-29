@@ -1,0 +1,20 @@
+
+@mixin text ($nombre,$color){
+    .text--#{$nombre}{
+        color: $color;
+    }
+}
+
+@mixin mediaquery(){
+    @media (max-width:1000px){
+        @content
+    }
+}
+
+@for $var from 1 to 4{
+    .actividad__detalle-#{$var} {
+        background-color: $color-primario;
+        color: $color-secundario;     
+    }
+    
+}

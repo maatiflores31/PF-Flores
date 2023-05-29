@@ -2,7 +2,21 @@
 @import '../basics/typography.scss';
 
 // HEADER 
+.oculto {
+    display: flex;
+    @include mediaquery(){
+        display: none;
+    }
+}
+@media (max-width:1000px){
+    .oculto {
+        display: none;
+    }
+}
 
+// @include text ("black",$color-primario);
+// @include text ("white",$color-secundario);
+// @include text ("blue",$color-terciario);
 header {
     background-color:$color-primario !important;
     font-size:20px;
@@ -17,7 +31,6 @@ header {
         border-radius: 15px !important;
         border: none;
     }
-    
     .text--blue{
         color: $color-terciario !important;
     }

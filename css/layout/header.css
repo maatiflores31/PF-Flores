@@ -1,35 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
-header {
-  background-color: black !important;
-  font-size: 20px;
-}
-header .logo__img {
-  height: 80%;
-  width: 30px;
-}
-header .header__btn {
-  background-color: #00d9c0 !important;
-  color: black !important;
-  font-size: 1vw !important;
-  border-radius: 15px !important;
-  border: none;
-}
-header .text--blue {
-  color: #00d9c0 !important;
-}
-header .text--white {
-  color: white !important;
-}
-header .mi__menu {
-  background-color: #00d9c0;
-  border-top: 2px solid black !important;
-  border-width: 2px solid black !important;
-}
-header .menu__fondo {
-  background-color: black !important;
-}
-header .menu__lista {
-  list-style-type: none;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 7 | /     @include mediaquery(){
+ * 8 | |         display: none;
+ * 9 | \     }
+ *   '
+ *   scss\layout\header.scss 7:5  root stylesheet */
 
-/*# sourceMappingURL=header.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 7 \2502  \250c      @include mediaquery(){\a 8 \2502  \2502          display: none;\a 9 \2502  \2514      }\a   \2575 \a   scss\\layout\\header.scss 7:5  root stylesheet";
+}

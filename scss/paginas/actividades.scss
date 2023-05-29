@@ -14,8 +14,8 @@
     border: 2px solid $color-terciario;
 }
 .actividades__subtitulo {
-    background-color: color-terciario;
-    color: black;
+    background-color: $color-terciario;
+    color: $color-primario;
     font-size: 4vw;
 }
 .actividades__detalle {

@@ -13,18 +13,9 @@
     background-size: cover;
     background-position: top;
 }
-
-.text--black{
-    color: $color-primario;
-}
-
-.text--blue{
-    color:$color-terciario !important;
-}
-
-.text--white{
-    color: $color-secundario !important;
-}
+@include text ("black",$color-primario);
+@include text ("white",$color-secundario);
+@include text ("blue",$color-terciario);
 
 /* INICIO */
 
@@ -59,9 +50,6 @@
 }
 .nombre__actividad {
     color: $color-terciario;
-}
-.text--blue {
-    color: $color-terciario !important;
 }
 
 .section4 {

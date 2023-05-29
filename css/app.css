@@ -11,6 +11,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rationale&display=swap");
+.actividad__detalle-1 {
+  background-color: black;
+  color: white;
+}
+
+.actividad__detalle-2 {
+  background-color: black;
+  color: white;
+}
+
+.actividad__detalle-3 {
+  background-color: black;
+  color: white;
+}
+
+.oculto {
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .oculto {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .oculto {
+    display: none;
+  }
+}
 header {
   background-color: black !important;
   font-size: 20px;
@@ -61,12 +90,12 @@ header .menu__lista {
   color: black;
 }
 
-.text--blue {
-  color: #00d9c0 !important;
+.text--white {
+  color: white;
 }
 
-.text--white {
-  color: white !important;
+.text--blue {
+  color: #00d9c0;
 }
 
 /* INICIO */
@@ -107,10 +136,6 @@ header .menu__lista {
 
 .nombre__actividad {
   color: #00d9c0;
-}
-
-.text--blue {
-  color: #00d9c0 !important;
 }
 
 .section4 {
@@ -186,7 +211,7 @@ footer .footer__btn {
 }
 
 .actividades__subtitulo {
-  background-color: color-terciario;
+  background-color: #00d9c0;
   color: black;
   font-size: 4vw;
 }
