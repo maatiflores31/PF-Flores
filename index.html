@@ -10,22 +10,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/app.css">
         <title>BullDog Gym | Inicio</title>
     </head>
-    <body class="fondo">
+    <body class="fondo" data-aos="fade-up">
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <button class="btn btn-primary oculto header__btn fs-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        MENU
+                    <button class="header__btn oculto text-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon fs-3"></span>
                     </button>
-                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <span class="navbar-toggler-icon fs-3"></span>
                     </button>
                     <img class="img-fluid logo__img ms-5" src="./imagenes/logo-gym.jpg" alt="logo">
-                    <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
+                    <a class="navbar-brand text--white ms-2 header__titulo" href="./index.html">Bull Dog Gym</a>
                     <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
                                 <li class="nav-eitem">
@@ -65,19 +66,25 @@
                         <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/planes.html">Planes</a></li>
                         <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/actividades.html">Actividades</a></li>
                         <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="./paginas/contactos.html">Contactos</a></li>
+                        <button>
+                            <a class="menu__btn" href="./paginas/login.html">INICIAR SESION</a>
+                        </button>
+                        <button>
+                            <a class="menu__btn" href="./paginas/crear-usuario.html">CREAR CUENTA</a>
+                        </button>
                     </ul>
                 </div>
             </div>
         </header>
-        <main>
+        <main data-aos="fade-up">
             <div class="container-fluid p-5">
                 <div class="row">
                     <div class="col-12 col-xl-6">
-                        <h2 class="text--white section1__frase">
+                        <h2 class="section1__frase">
                                 "Fijar objetivos es el primer paso para transformar lo invisible en visible" 
                                 <br>- Anthony Robbins
                         </h2> 
-                        <h3 class="text--white my-3">
+                        <h3 class="my-3 section1__frase2">
                             Tres días para motivarte. Se necesitan tres semanas para formar un hábito. Hacen falta tres meses para obtener resultados. Y tres años para cumplir sus objetivos.
                         </h3>
                         <div class="text-center">
@@ -92,7 +99,7 @@
                 </div>
             </div>
             <div class="container-fluid text-center seccion2">
-                <h3 class="fs-1 text--white mt-4"><u>
+                <h3 class="fs-1 text--white mt-4 section2__titulo"><u>
                     ACTIVIDADES </u>
                 </h3>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -101,7 +108,8 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" data-aos="fade-up"
+                    data-aos-duration="3000">
                         <div class="carousel-item active">
                             <div class="row pb-4">
                                 <div class="col-6 text-center">
@@ -160,7 +168,8 @@
                     <a class="nav-link" href="./paginas/actividades.html">VER MAS</a>
                 </button>
             </div>
-            <div class="container-fluid my-4 text-center">
+            <div class="container-fluid my-4 text-center" data-aos="fade-up"
+            data-aos-duration="3000">
                 <h3 class="text--blue fs-1"><u>Comentarios de nuestros usuarios</u></h3>
                 <p class="fs-2 text--blue">
                     Nuestros usuarios estan muy contentos y eso nos motiva seguir creciendo para nuestros clientes.
@@ -177,40 +186,32 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid section4 text-center">
+            <div class="container-fluid section4 text-center" data-aos="fade-up" data-aos-duration="3000">
                 <p class="text__oferta my-4">
                     DESCUENTO DEL 30% EN PLANES DE + 3 MESES, APROVECHALO!!!
                 </p>
             </div>
         </main>
         <footer> 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-7">
-                        <div class="row">
-                            <div class="col-4 text-center">
-                                <img class="footer__logo" src="./imagenes/logo-gym.jpg" alt="">
-                            </div>
-                            <div class="col-8 text-center footer__contenedorSeguinos">
-                                <h2 class="footer__seguinos">Seguinos en:</h2>
-                                    <img class="footer__icono" src="./imagenes/iconos/facebook.png" alt="">
-                                    <img class="footer__icono" src="./imagenes/iconos/instagram.png" alt="">
-                                    <img class="footer__icono" src="./imagenes/iconos/twitter.png" alt="">
-                                    <img class="footer__icono" src="./imagenes/iconos/youtube.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5 text-center">
-                        <div class="row">
-                            <div class="col">
-                                <input class="footer__celda">
-                                <button class="footer__btn">SUSCRIBETE</button>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
+            <div>
+                <img class="footer__logo" src="./imagenes/logo-gym.jpg" alt="">
+            </div>
+            <div>
+                <h2 class="footer__seguinos">Seguinos en:</h2>
+                <a href="https://www.facebook.com/" target="_blank"><img class="footer__icono" src="./imagenes/iconos/facebook.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="footer__icono" src="./imagenes/iconos/instagram.png"></a>
+                <a href="https://twitter.com/home" target="_blank"><img class="footer__icono" src="./imagenes/iconos/twitter.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="footer__icono" src="./imagenes/iconos/youtube.png"></a>
+            </div>
+            <div>
+                <input class="footer__celda">
+                <button class="footer__btn">SUSCRIBETE</button>
             </div>
         </footer>
         <script src="./js/bootstrap.min.js"> </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

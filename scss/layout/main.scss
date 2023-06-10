@@ -20,8 +20,13 @@
 /* INICIO */
 
 .section1__frase {
-    font-size: 4vw;
+    font-size: 4vh;
     font-family: 'Lobster Two', sans-serif;
+    color: $color-secundario;
+}
+.section1__frase2{
+    font-size: 3vh;
+    color: $color-secundario;
 }
 .seccion1__imagen {
     height: 80%;
@@ -43,18 +48,15 @@
     75%{
         transform: translateX(-40px);
     }
-    100%{
-        transform: translateY(-15px);
-    }
 
 }
 .section1__btn {
-    height: 5vw;
-    width: 20vw;
+    height: 6vh;
+    width: 50%;
     background-color: $color-terciario;
     color: $color-primario;
-    font-size: 3vw;
-    a:hover {
+    font-size: 120%;
+    :hover {
         background-color: $color-cuatro;
     }
 }
@@ -65,6 +67,10 @@
     border-radius: 5px;
     border-top: 2px solid $color-terciario;
     border-bottom: 2px solid $color-terciario;
+}
+.section2__titulo {
+    background-color: black;
+    color: $color-secundario;
 }
 .seccion2__imagen1 {
     height: 80%;
@@ -100,9 +106,9 @@
     font-size: 4vw;
 }
 .section2__btn {
-    height: 5vw;
-    width: 10vw;
+    height: 5vh;
+    width: 30%;
     background-color: $color-terciario;
     color: $color-primario;
-    font-size: 3vw;
+    font-size: 150%;
 }

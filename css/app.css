@@ -28,6 +28,15 @@
 
 .oculto {
   display: flex;
+  height: 4vw;
+  width: 5vw;
+  background-color: #00d9c0 !important;
+  color: black !important;
+  font-size: 1vw !important;
+  border-radius: 15px !important;
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1000px) {
   .oculto {
@@ -35,7 +44,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 993px) {
   .oculto {
     display: none;
   }
@@ -49,16 +58,21 @@ header .logo__img {
   height: 80%;
   width: 30px;
 }
+header .header__titulo {
+  font-size: 130% !important;
+}
 header .header__btn {
   background-color: #00d9c0 !important;
   color: black !important;
-  font-size: 1vw !important;
   border-radius: 15px !important;
   border: none;
 }
 header .header__btn :hover {
   background-color: green;
   transform: scale(1.5, 1.5) !important;
+}
+header .header__btn a {
+  font-size: 90%;
 }
 header .text--blue {
   color: #00d9c0 !important;
@@ -89,6 +103,24 @@ header .menu__lista {
 header .menu__lista li a:hover {
   color: white !important;
 }
+header .menu__lista button:hover {
+  border: 1px solid black;
+  background-color: white;
+}
+header .menu__lista button {
+  height: 15%;
+  width: 40%;
+  background-color: black;
+}
+header .menu__lista button a {
+  text-decoration: none;
+}
+header .menu__lista .menu__btn {
+  height: 100%;
+  width: 100%;
+  color: #00d9c0;
+  font-size: 80%;
+}
 
 * {
   font-family: "Rationale", sans-serif;
@@ -117,8 +149,14 @@ header .menu__lista li a:hover {
 
 /* INICIO */
 .section1__frase {
-  font-size: 4vw;
+  font-size: 4vh;
   font-family: "Lobster Two", sans-serif;
+  color: white;
+}
+
+.section1__frase2 {
+  font-size: 3vh;
+  color: white;
 }
 
 .seccion1__imagen {
@@ -142,18 +180,15 @@ header .menu__lista li a:hover {
   75% {
     transform: translateX(-40px);
   }
-  100% {
-    transform: translateY(-15px);
-  }
 }
 .section1__btn {
-  height: 5vw;
-  width: 20vw;
+  height: 6vh;
+  width: 50%;
   background-color: #00d9c0;
   color: black;
-  font-size: 3vw;
+  font-size: 120%;
 }
-.section1__btn a:hover {
+.section1__btn :hover {
   background-color: green;
 }
 
@@ -165,6 +200,11 @@ header .menu__lista li a:hover {
   border-radius: 5px;
   border-top: 2px solid #00d9c0;
   border-bottom: 2px solid #00d9c0;
+}
+
+.section2__titulo {
+  background-color: black;
+  color: white;
 }
 
 .seccion2__imagen1 {
@@ -205,18 +245,26 @@ header .menu__lista li a:hover {
 }
 
 .section2__btn {
-  height: 5vw;
-  width: 10vw;
+  height: 5vh;
+  width: 30%;
   background-color: #00d9c0;
   color: black;
-  font-size: 3vw;
+  font-size: 150%;
 }
 
 /* FOOTER */
 footer {
+  display: flex;
   width: 100%;
   height: 8vw;
   background-color: black;
+  border-top: 2px solid white;
+}
+footer div {
+  display: flex;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
 }
 footer .footer__contenedor {
   display: flex;
@@ -236,10 +284,14 @@ footer .footer__icono {
   height: 3vw;
   width: 3vw;
   aspect-ratio: 1/1;
+  padding: 1%;
+  transition: all 1.5s ease;
+}
+footer .footer__icono:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1.5s ease;
 }
 footer .footer__contenedorSeguinos {
-  display: flex;
-  flex-direction: reverse;
   padding-bottom: 5%;
 }
 footer .footer__celda {
@@ -259,7 +311,7 @@ footer .footer__btn {
   padding: 4% 0;
   background-color: black;
   color: white;
-  font-size: 8vw;
+  font-size: 230%;
 }
 
 .actividades__contenedor {
@@ -270,7 +322,7 @@ footer .footer__btn {
 .actividades__subtitulo {
   background-color: #00d9c0;
   color: black;
-  font-size: 4vw;
+  font-size: 200%;
 }
 
 .actividades__subtitulo:hover {
@@ -280,7 +332,7 @@ footer .footer__btn {
 .actividades__detalle {
   background-color: black;
   color: white;
-  font-size: 2vw;
+  font-size: 130%;
   padding: 5% 0;
 }
 
@@ -307,22 +359,22 @@ footer .footer__btn {
   padding: 4% 0;
   background-color: black;
   color: #00d9c0;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 
 .contactos__nombre {
   color: black;
-  font-size: 4vw;
+  font-size: 130%;
 }
 
 .contactos__item {
   text-decoration: underline;
   color: black;
-  font-size: 3vw;
+  font-size: 120%;
 }
 
 .contactos__detalle {
-  font-size: 2vw;
+  font-size: 110%;
   color: black;
 }
 
@@ -389,25 +441,26 @@ footer .footer__btn {
 .login__item {
   background-color: black;
   color: #00d9c0;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .login__celda {
   width: 80%;
-  height: 40px;
-  font-size: 2vw;
+  height: 10%;
+  font-size: 3vw;
 }
 
 .login__comentarios {
   width: 80%;
   height: 100px;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .login__btn {
   color: black;
   font-size: 2vw;
-  width: 12vw;
+  height: 15%;
+  width: 25%;
   padding: 0 1vh;
   background-color: #00d9c0;
 }
@@ -481,7 +534,7 @@ footer .footer__btn {
 .rutinas__titulo {
   background-color: #00d9c0;
   color: black;
-  font-size: 4vw;
+  font-size: 8vw;
 }
 
 .rutinas__descrip {
@@ -491,15 +544,15 @@ footer .footer__btn {
 
 .rutinas__video {
   display: flex;
-  height: 90%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   align-items: center;
 }
 
 .rutinas__subtitulos {
   color: white;
   background-color: black;
-  font-size: 40px;
+  font-size: 6vw;
 }
 
 .sedes__titulo {
@@ -517,6 +570,12 @@ footer .footer__btn {
 }
 .sedes__gym iframe:hover {
   transform: scale(1.2, 1.2);
+}
+
+.sedes__iframe {
+  height: 80%;
+  width: 80%;
+  aspect-ratio: 1/1;
 }
 
 /*# sourceMappingURL=app.css.map */

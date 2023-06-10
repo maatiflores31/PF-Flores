@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/app.css">
         <title>BullDog Gym | Contactos</title>
@@ -17,14 +18,14 @@
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <button class="btn btn-primary oculto header__btn fs-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        MENU
+                    <button class="header__btn oculto text-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon fs-3"></span>
                     </button>
-                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler header__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <span class="navbar-toggler-icon fs-3"></span>
                     </button>
                     <img class="img-fluid logo__img ms-5" src="../imagenes/logo-gym.jpg" alt="logo">
-                    <a class="navbar-brand text--white mx-4 fs-2" href="#">Bull Dog Gym</a>
+                    <a class="navbar-brand text--white ms-2 header__titulo" href="../index.html">Bull Dog Gym</a>
                     <div class="collapse navbar-collapse position-relative mx-2 text-center" id="navbarTogglerDemo02">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 menu__fondo">
                                 <li class="nav-eitem">
@@ -64,6 +65,12 @@
                         <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/planes.html">Planes</a></li>
                         <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/actividades.html">Actividades</a></li>
                         <li class="nav-item"><a class="nav-link text-start mx-3 my-1" href="../paginas/contactos.html">Contactos</a></li>
+                        <button>
+                            <a class="menu__btn" href="../paginas/login.html">INICIAR SESION</a>
+                        </button>
+                        <button>
+                            <a class="menu__btn" href="../paginas/crear-usuario.html">CREAR CUENTA</a>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -71,7 +78,7 @@
         <main>
             <h2 class="text-center contactos__titulo">NUESTROS COACHS DE CONFIANZA Y EXPERIENCIA</h2>
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-down" data-aos-duration="1500">
                     <div class="col-12 col-xl-6">
                         <div class="row contactos__contenedor">
                             <h3 class="contactos__nombre text-center">Maximiliano Armella</h3>
@@ -81,13 +88,13 @@
                             <h4 class="contactos__item">TEL:</h4>
                             <p class="contactos__detalle">123456789</p>
                             <h4 class="contactos__item">REDES</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>https://www.instagram.com/</li>
                                 <li>https://www.facebook.com/</li>
                                 <li>https://twitter.com/home</li>
                             </ul>
                             <h4 class="contactos__item">ESPECIALIDAD</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>Musculacion</li>
                                 <li>Funcional</li>
                                 <li>Crossfit</li>
@@ -103,13 +110,13 @@
                             <h4 class="contactos__item">TEL:</h4>
                             <p class="contactos__detalle">123456789</p>
                             <h4 class="contactos__item">REDES</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>https://www.instagram.com/</li>
                                 <li>https://www.facebook.com/</li>
                                 <li>https://twitter.com/home</li>
                             </ul>
                             <h4 class="contactos__item">ESPECIALIDAD</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>Entrenamiento Fisico</li>
                                 <li>Natacion</li>
                                 <li>Maraton</li>
@@ -117,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-down" data-aos-duration="2000">
                     <div class="col-12 col-xl-6">
                         <div class="row contactos__contenedor">
                             <h3 class="contactos__nombre text-center">Farid Fernandez</h3>
@@ -127,13 +134,13 @@
                             <h4 class="contactos__item">TEL:</h4>
                             <p class="contactos__detalle">123456789</p>
                             <h4 class="contactos__item">REDES</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>https://www.instagram.com/</li>
                                 <li>https://www.facebook.com/</li>
                                 <li>https://twitter.com/home</li>
                             </ul>
                             <h4 class="contactos__item">ESPECIALIDAD</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>Ciclismo</li>
                                 <li>Boxeo</li>
                                 <li>Yoga</li>
@@ -149,13 +156,13 @@
                             <h4 class="contactos__item">TEL:</h4>
                             <p class="contactos__detalle">123456789</p>
                             <h4 class="contactos__item">REDES</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>https://www.instagram.com/</li>
                                 <li>https://www.facebook.com/</li>
                                 <li>https://twitter.com/home</li>
                             </ul>
                             <h4 class="contactos__item">ESPECIALIDAD</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>Preparacion fisica para futbolistas</li>
                                 <li>Pilates</li>
                                 <li>Spinning</li>
@@ -163,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-down" data-aos-duration="2000">
                     <div class="col-12 col-xl-6">
                         <div class="row contactos__contenedor">
                             <h3 class="contactos__nombre text-center">Ulises Yampe</h3>
@@ -173,13 +180,13 @@
                             <h4 class="contactos__item">TEL:</h4>
                             <p class="contactos__detalle">123456789</p>
                             <h4 class="contactos__item">REDES</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>https://www.instagram.com/</li>
                                 <li>https://www.facebook.com/</li>
                                 <li>https://twitter.com/home</li>
                             </ul>
                             <h4 class="contactos__item">ESPECIALIDAD</h4>
-                            <ul class="contactos__detalle ms-5">
+                            <ul class="contactos__detalle">
                                 <li>Artes Marciales Mixtas</li>
                                 <li>Taekondo</li>
                                 <li>Padel</li>
@@ -190,33 +197,25 @@
             </div>
         </main>
         <footer> 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-7">
-                        <div class="row">
-                            <div class="col-4 text-center">
-                                <img class="footer__logo" src="../imagenes/logo-gym.jpg" alt="">
-                            </div>
-                            <div class="col-8 text-center footer__contenedorSeguinos">
-                                <h2 class="footer__seguinos">Seguinos en:</h2>
-                                    <img class="footer__icono" src="../imagenes/iconos/facebook.png" alt="">
-                                    <img class="footer__icono" src="../imagenes/iconos/instagram.png" alt="">
-                                    <img class="footer__icono" src="../imagenes/iconos/twitter.png" alt="">
-                                    <img class="footer__icono" src="../imagenes/iconos/youtube.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5 text-center">
-                        <div class="row">
-                            <div class="col">
-                                <input class="footer__celda">
-                                <button class="footer__btn">SUSCRIBETE</button>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
+            <div class="">
+                <img class="footer__logo" src="../imagenes/logo-gym.jpg" alt="">
+            </div>
+            <div class="">
+                <h2 class="footer__seguinos">Seguinos en:</h2>
+                <a href="https://www.facebook.com/" target="_blank"><img class="footer__icono" src="../imagenes/iconos/facebook.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="footer__icono" src="../imagenes/iconos/instagram.png"></a>
+                <a href="https://twitter.com/home" target="_blank"><img class="footer__icono" src="../imagenes/iconos/twitter.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="footer__icono" src="../imagenes/iconos/youtube.png"></a>
+            </div>
+            <div>
+                <input class="footer__celda">
+                <button class="footer__btn">SUSCRIBETE</button>
             </div>
         </footer>
         <script src="../js/bootstrap.min.js"> </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

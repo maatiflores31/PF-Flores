@@ -4,11 +4,20 @@
 // HEADER 
 .oculto {
     display: flex;
+    height: 4vw;
+    width: 5vw;
+    background-color: $color-terciario !important;
+    color: $color-primario !important;
+    font-size: 1vw !important;
+    border-radius: 15px !important;
+    border: none;
+    justify-content: center;
+    align-items: center;
     @include mediaquery(){
         display: none;
     }
 }
-@media (max-width:1000px){
+@media (max-width:993px){
     .oculto {
         display: none;
     }
@@ -21,16 +30,22 @@ header {
     .logo__img {
         height: 80%;
         width: 30px;
+
+    }
+    .header__titulo {
+        font-size: 130% !important;
     }
     .header__btn {
         background-color: $color-terciario !important;
         color: $color-primario !important;
-        font-size: 1vw !important;
         border-radius: 15px !important;
         border: none;
         :hover {
             background-color: $color-cuatro;
             transform: scale(1.5,1.5) !important;
+        }
+        a {
+            font-size: 90%;
         }
     }
     .text--blue{
@@ -50,7 +65,7 @@ header {
         li a:hover{
             color: $color-terciario !important;
         }
-        li {
+        li{
             border-left: 1px solid $color-terciario;
         }
         li:nth-child(1){
@@ -62,6 +77,24 @@ header {
         list-style-type: none;
         li a:hover{
             color: $color-secundario !important;
+        }
+        button:hover{
+            border: 1px solid $color-primario;
+            background-color: $color-secundario;
+        }
+        button{
+            height: 15%;
+            width: 40%;
+            background-color: $color-primario;
+            a {
+                text-decoration: none;
+            }
+        }
+        .menu__btn {
+            height: 100%;
+            width: 100%;
+            color: $color-terciario;
+            font-size: 80%;
         }
     }
 

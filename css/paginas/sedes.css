@@ -16,4 +16,10 @@
   transform: scale(1.2, 1.2);
 }
 
+.sedes__iframe {
+  height: 80%;
+  width: 80%;
+  aspect-ratio: 1/1;
+}
+
 /*# sourceMappingURL=sedes.css.map */

@@ -8,7 +8,7 @@
 .rutinas__titulo {
     background-color: $color-terciario;
     color: $color-primario;
-    font-size: 4vw;
+    font-size: 8vw;
 }
 
 .rutinas__descrip {
@@ -18,13 +18,13 @@
 
 .rutinas__video {
     display:flex;
-    height: 90%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     align-items: center;
 }
 
 .rutinas__subtitulos {
     color: $color-secundario;
     background-color: $color-primario;
-    font-size: 40px;
+    font-size: 6vw;
 }

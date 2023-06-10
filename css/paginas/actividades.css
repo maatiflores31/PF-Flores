@@ -3,7 +3,7 @@
   padding: 4% 0;
   background-color: black;
   color: white;
-  font-size: 8vw;
+  font-size: 230%;
 }
 
 .actividades__contenedor {
@@ -14,7 +14,7 @@
 .actividades__subtitulo {
   background-color: #00d9c0;
   color: black;
-  font-size: 4vw;
+  font-size: 200%;
 }
 
 .actividades__subtitulo:hover {
@@ -24,7 +24,7 @@
 .actividades__detalle {
   background-color: black;
   color: white;
-  font-size: 2vw;
+  font-size: 130%;
   padding: 5% 0;
 }
 
